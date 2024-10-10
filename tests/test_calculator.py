@@ -1,5 +1,5 @@
 '''My Calculator Test'''
-from calculator.calculations import Calculations
+from calculator.calculation import Calculation
 
 def test_addition():
     '''Test that addition function works '''    
