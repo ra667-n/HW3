@@ -30,10 +30,12 @@ class Calculation:
         return a * b
     
     def divide(a,b) -> None:
-        if b == 0:
-            raise ZeroDivisionError("Division by 0")
-        else:
-            return a / b
+        try:
+	   result = a/b
+       except ZeroDivisionError:
+            print("Error: Division by zero is not allowed.")
+	    return
+	print(f"The result of {a} divided by {b} is {result}.")
 
 test = Calculation(2, 4, 'add')
 test2 = Calculation.add(1,2)
